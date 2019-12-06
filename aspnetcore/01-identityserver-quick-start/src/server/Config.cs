@@ -9,6 +9,13 @@ namespace netcore_webapi_auth_demo
 {
     public static class Config
     {
+        // 声明 身份验证 信息
+        public static IEnumerable<IdentityResource> Ids => new List<IdentityResource>
+        {
+            new IdentityResources.OpenId(),
+            new IdentityResources.Profile()
+        };
+
         // 声明需要保护的API资源
         public static IEnumerable<ApiResource> Apis => new List<ApiResource>()
         {
