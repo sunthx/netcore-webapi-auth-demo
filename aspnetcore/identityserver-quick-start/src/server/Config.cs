@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using IdentityServer4.Models;
 
+// ReSharper disable once IdentifierTypo
 namespace netcore_webapi_auth_demo
 {
     public static class Config
